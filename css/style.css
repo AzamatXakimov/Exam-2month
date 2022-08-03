@@ -411,3 +411,80 @@ only screen and (                min-resolution: 2dppx) {
         background-image: url("../images/Pets@2x.png"), url("../images/parrot@2x.png");
     }
 }
+
+.about-us {
+    padding-bottom: 191px;
+}
+
+.about-us__box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 753px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.about-us__box::before {
+    position: absolute;
+    top: 10px;
+    left: -101px;
+    display: inline-block;
+    width: 51px;
+    height: 41px;
+    background-image: url("../images/comma1.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    content: "";
+}
+.about-us__box::after {
+    position: absolute;
+    bottom: 135px;
+    right: -87px;
+    display: inline-block;
+    width: 51px;
+    height: 41px;
+    background-image: url("../images/comma2.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    content: "";
+}
+
+.about-us__desc {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    
+    color: var(--main-desc-color);
+}
+.about-us__desc::before {
+    display: block;
+    width: 140px;
+    height: 2px;
+    margin-right: auto;
+    margin-bottom: 43px;
+    margin-left: auto;
+    background-color: #dbdbdb;
+    content: "";
+}
+.about-us__desc::after {
+    display: block;
+    width: 140px;
+    height: 2px;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-left: auto;
+    background-color: #dbdbdb;
+    content: "";
+}
+
+.about-us__text {
+    margin-top: 70px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 26px;
+
+    text-align: center;
+    color: var(--main-text-color);
+}
