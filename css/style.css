@@ -66,12 +66,23 @@ body{
     font-family: var(--main-font-family);
     font-weight: var(--main-font-weight);
     background-color: var(--main-body-bg-color);
+    background-image: url("../images/bg.png");
 }
 
 .container{
     max-width: 1350px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 /* .site-header {
@@ -317,4 +328,86 @@ body{
 
 .site-main{
     flex-grow: 1;
+}
+
+
+.hero {
+    padding-top: 146px;
+    padding-bottom: 290px;
+    background-image: url("../images/Pets.png"), url("../images/parrot.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 540px) calc(50% - 70px), calc(50% + 695px) calc(50% + 200px);
+}
+
+.hero__textbox {
+    width: 608px;
+    margin-right: 32px;
+    margin-left: auto;
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 29px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;
+
+    color: var(--main-text-color);
+}
+
+.hero__text-blu {
+    color: #78c0de;
+}
+
+.hero__desc-box {
+    width: 495px;
+    margin-bottom: 38px;
+}
+
+.hero__desc {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: var(--main-desc-color);
+}
+
+.hero__link {
+    display: inline-block;
+    padding-top: 15px;
+    padding-right: 48px;
+    padding-left: 47px;
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main-text-color);
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+.hero__link:hover{
+    color: var(--main-text-color);
+    background-color: var(--main-hover-color);
+}
+.hero__link:active{
+    color: var(--main-text-color);
+    background-color: var(--main-hover-color);
+    opacity: 0.6;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    body{
+        background-image: url("../images/bg@2x.png");
+    }
+    .hero{
+        background-image: url("../images/Pets@2x.png"), url("../images/parrot@2x.png");
+    }
 }
