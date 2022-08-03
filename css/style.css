@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* ROOT */
 :root{
     --main-font-family: "Futura PT", "Arial", sans-serif;
@@ -80,6 +87,7 @@ body{
     font-weight: var(--main-font-weight);
     background-color: var(--main-body-bg-color);
     background-image: url("../images/bg.png");
+    background-position: top 140px center;
     overflow-x: hidden;
 }
 
