@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -126,7 +126,7 @@
                     <h2 class="visually-hidden">
                         Оржоникидзевская Ветеринарная клиника   
                     </h2>
-                    <blockquote class="about-us__desc" cite="Оржоникидзевская Ветеринарная клиника">
+                    <blockquote class="about-us__desc" cite="Оржоникидзевская-Ветеринарная-клиника">
                         Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу. Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную ветеринарную помощь.
                     </blockquote>
                     <h3 class="about-us__text">
@@ -148,7 +148,7 @@
                         <ol class="our-services__list">
                             <li class="our-services__item">
                                 <h3 class="our-services__item-text">
-                                    <a class="our-services__item-link" href="#">
+                                    <a class="our-services__item-link our-services__item-link--first" href="#">
                                         Первичный осмотр
                                     </a>
                                 </h3>
@@ -276,9 +276,9 @@
                         </h2>
                         <form class="site-article__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
                             <input class="site-article__input-zone" type="email" name="user_email" id="user_email"
-                            aria-label="Enter your email" required placeholder="Email Address">
+                            aria-label="Enter your email" required placeholder="Укажите Ваш email адрес">
     
-                            <button class="site-article__button">Подписаться</button>
+                            <button class="site-article__button" type="submit">Подписаться</button>
                         </form>
                     </div>
                     <img class="site-article__image" src="./images/dog.png" 
@@ -290,6 +290,44 @@
             </div>
         </article>
         <!-- Article finish -->
+
+
+        <!-- Useful articles start  -->
+        <section class="useful-articles">
+            <div class="container">
+
+            </div>
+        </section>
+        <!-- Useful articles finish  -->
+
+        <!-- Feedback start  -->
+        <section class="feedback">
+            <div class="feedback__box">
+                <iframe class="feedback__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4157.567048965797!2d37.5339447778192!3d47.111147215445236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e6e38c40595daf%3A0x8fe58f6df64d4ef6!2z0YPQuy4g0J7Qu9C10LrRgdCw0L3QtNGA0LAg0J7RgdGC0YDQvtCy0YHRjNC60L7Qs9C-LCAyOCwg0JzQsNGA0LjRg9C_0L7Qu9GMLCDQlNC-0L3QtdGG0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgODc1MDA!5e0!3m2!1sru!2sus!4v1659528355232!5m2!1sru!2sus" width="462" height="652" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <div class="feedback__textbox">
+                    <h2 class="feedback__text">
+                        Обратная связь
+                    </h2>
+                    <p class="feedback__desc">
+                        При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:
+                    </p>
+                    <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                        <input class="feedback__input-zone" type="text" name="user_name" id="user_name" minlength="3"
+                        maxlength="1000000" aria-label="Enter your name" required placeholder="Ваше имя">
+
+                        <input class="feedback__input-zone" type="email" name="user_email" id="user_email"
+                        aria-label="Enter your email" required placeholder="Email для обратной связи">
+
+                        <textarea class="feedback__input-zone feedback__input-zone--question" name="user_question" id="user_question" 
+                        minlength="3" aria-label="Enter your question" required  placeholder="Опишите Ваш вопрос.                              Например: в каком возрасте можно       прививать от бешенства?"></textarea>
+
+                        <button class="feedback__button" type="submit">Задать нам вопрос</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Feedback finish  -->
     </main>
     <!-- Main finish  -->
 
