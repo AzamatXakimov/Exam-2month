@@ -794,3 +794,108 @@ only screen and (                min-resolution: 2dppx) {
     background-position: center;
     content: "";
 }
+
+.site-article {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 90px;
+    padding-bottom: 88px;
+    background-image: url("../images/article-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.site-article__box {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.site-article__textbox{
+    margin-left: 216px;
+}
+
+.site-article__text {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 20px;
+
+    color: #fff;
+}
+
+.site-article__form {
+    display: flex;
+    align-items: center;
+}
+
+.site-article__input-zone {
+    width: 335px;
+    margin-right: 21px;
+    padding-top: 18px;
+    padding-right: 22px;
+    padding-bottom: 12px;
+    padding-left: 22px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    
+    color: var(--main-text-color);
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: 2px solid transparent;
+}
+.site-article__input-zone:focus {
+    outline: 2px solid var(--main-hover-color);
+}
+.site-article__input-zone:not(:focus):not(:placeholder-shown) {
+    color: #dc4d41;
+    outline: 2px solid #dc4d41;
+}
+
+.site-article__button {
+    padding-top: 15px;
+    padding-right: 53px;
+    padding-bottom: 14px;
+    padding-left: 51px;
+    font-size: 16px;
+    line-height: 21px;
+    
+    color: #fff;
+    background: var(--main-text-color);
+    border: none;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+.site-article__button:hover {
+    color: var(--main-text-color);
+    background-color: var(--main-hover-color);
+}
+.site-article__button:active {
+    color: var(--main-text-color);
+    background-color: var(--main-hover-color);
+    opacity: 0.6;
+}
+
+.site-article__image {
+    position: absolute;
+    bottom: -65px;
+    left: calc(50% + 60px);
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .site-article{
+        background-image: url("../images/article-bg@2x.png");
+    }
+}
+
