@@ -177,6 +177,7 @@ body{
     color: var(--main-hover-color);
 }
 .site-header__phone-number:active {
+    color: var(--main-text-color);
     opacity: 0.6;
 }
 
@@ -1017,4 +1018,177 @@ only screen and (                min-resolution: 2dppx) {
     color: #fff;
     background-color: var(--main-hover-color);
     border: none;
+}
+
+.site-footer {
+    padding-top: 61px;
+    padding-bottom: 23px;
+    background-color: #f3f3f3;
+}
+
+/* .site-footer__box {
+} */
+
+.site-footer__inner {
+    display: flex;
+    margin-bottom: 28px;
+}
+
+.logo--footer {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.site-footer__nav {
+    display: flex;
+    /* margin-right: 40px; */
+    margin-left: 67px;
+}
+
+.site-footer__nav-list {
+    margin-top: 0;
+    margin-right: 87px;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-footer__nav-item {
+    margin-bottom: 14px;
+}
+.site-footer__nav-item:last-child {
+    margin-bottom: 0;
+}
+
+.site-footer__nav-link {
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: var(--main-text-color);
+    transition: 0.3s ease;
+}
+.site-footer__nav-link:hover {
+    color: var(--main-hover-color);
+}
+.site-footer__nav-link:active {
+    color: var(--main-text-color);
+    opacity: 0.7;
+}
+
+.site-footer__date-list {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    margin-right: 138px;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-left: 0;
+    list-style: none;
+}
+.site-footer__date-list::before {
+    position: absolute;
+    top: 3px;
+    left: -28px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url("../images/schedule.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+
+
+.site-footer__date-item {
+    margin-bottom: 3px;
+}
+
+.site-footer__datetime {
+    font-size: 14px;
+    line-height: 18px;
+
+    color: var(--main-text-color);
+}
+
+.site-footer__adress {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 157px;
+    margin-right: 112px;
+}
+.site-footer__adress::before {
+    position: absolute;
+    top: 3px;
+    left: -23px;
+    display: inline-block;
+    width: 14px;
+    height: 13px;
+    background-image: url("../images/house.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+
+.site-footer__adress-link {
+    font-size: 16px;
+    line-height: 21px;
+    font-style: normal;
+    text-decoration: none;
+    
+    color: var(--main-text-color);
+}
+
+.site-footer__phone-list {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-footer__phone-list::before {
+    position: absolute;
+    top: 3px;
+    left: -22px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 9px;
+    background-image: url("../images/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+
+.site-footer__phone-item {
+    margin-bottom: 4px;
+}
+
+.site-footer__phone-link {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    text-decoration: none;
+    color: var(--main-text-color);
+    transition: color 0.3s ease;
+}
+.site-footer__phone-link:hover {
+    color: var(--main-hover-color);
+}
+.site-footer__phone-link:active {
+    color: var(--main-text-color);
+    opacity: 0.6;
+}
+
+.site-footer__licenthe {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    text-align: right;
+    
+    color: #5c5c5c;
 }
