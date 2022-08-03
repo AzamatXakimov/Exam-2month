@@ -1590,6 +1590,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .site-footer__licenthe {
+    display: block;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
