@@ -731,10 +731,10 @@ only screen and (                min-resolution: 2dppx) {
     border-radius: 5px;
 }
 .our-services__item-link:hover {
-    opacity: 0.8;
+    opacity: 0.6;
 }
 .our-services__item-link:active {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 .our-services__item-link--first{
     margin-bottom: 0;
